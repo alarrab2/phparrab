@@ -1,28 +1,32 @@
-# php-getting-started
+شرح تنصيب هيروكو علي كوديني 
+ -------------------
+اولا نضع هذا الكود في ترمنل كوديني
+1**
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh    انتر
+  -------------------
+ثانيا نربط كوديني مع هيروكو عبر الكود التالي
+2**
+heroku login   انتر\
+نضع ايميل هيروكو 
+وكلمة المرور الخاصة بالحساب
+ --------------------
+ 3**
+ تنصيب الملفات عبر الكود 
+  git clone https://github.com/alarrab2/phparrab.git انتر
+  
+  cd phparrab  انتر
+  
+  ----------------
+  من ثم نعطي المشورع اسم
+  
+heroku create اسم المشروع
+-----------
+نضيف المشروع 
 
-A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
+git add . 
 
-This application supports the [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
+git commit -am "initial commit"
+ 
+git push heroku master 
 
-## Deploying
-
-Install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
-
-```sh
-$ git clone git@github.com:heroku/php-getting-started.git # or clone your own fork
-$ cd php-getting-started
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using PHP on Heroku, see these Dev Center articles:
-
-- [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php)
-- [PHP on Heroku](https://devcenter.heroku.com/categories/php)
+--------------------------
